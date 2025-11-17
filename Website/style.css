@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+}
+
+html {
+    background: radial-gradient(circle, #1e2138 0%, #000000 100%);
+    color: white;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 44px;
+    min-height: 44px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 15px 40px;
+    padding: 0px 10px;
+    border-radius: 26px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #333333;
+    user-select: none;
+}
+
+nav div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#icon {
+    background-color: #333333;
+    border-radius: 100%;
+}
+
+nav h4 {
+    padding-left: 10px;
+}
+
+#about {
+    margin: 0px 40px;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+#about img {
+    user-select: none;
+}
+
+hr {
+    width: 160px;
+    height: 2px;
+    border: none;
+    border-radius: 100%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, #ADB4FF, #8791FF);
+}
+
+#about h2 {
+    padding-bottom: 15px;
+    background: linear-gradient(90deg, #ADB4FF, #8791FF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#about p {
+    max-width: 600px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto;
+    height: 44px;
+    min-height: 44px;
+    width: 160px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 26px;
+    border-color: #333333;
+}
+
+footer a {
+    padding: 0px 11px;
+    align-items: center;
+    height: 24px;
+}
+
+footer img{
+    user-select: none;
+}
+
+footer img:hover{
+    opacity: 0.8;
+}
+
+@media (min-width: 1100px) {
+
+    nav {
+        width: 1000px;
+        margin: 15px auto;
+    }
+    
+}
