@@ -1,6 +1,9 @@
+/* Configuracion general */
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: "Poppins";
 }
 
@@ -10,25 +13,46 @@ html {
 }
 
 body {
-    background: radial-gradient(circle, #1e2138 10%, #000000 80%);
-    height: 100dvh;
     display: flex;
     flex-direction: column;
 }
 
-nav {
-    background-color: rgba(0, 0, 0.8);
+/* Clases */
+
+.capsule {
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(5px);
     height: 44px;
     min-height: 44px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 15px 40px;
-    padding: 0px 10px;
-    border-radius: 26px;
     border-style: solid;
     border-width: 1px;
+    border-radius: 22px;
     border-color: #444444;
+}
+
+.line {
+    width: 160px;
+    height: 2px;
+    background: linear-gradient(90deg, #81535B, #AC8F94, #81535B);
+    border-radius: 1px;
+}
+
+.text-acent {
+    background: linear-gradient(45deg, #AC8F94, #9A4F4C);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Etiquetas */
+
+nav {
+    position: sticky;
+    top: 15px;
+    margin: 15px 40px;
+    padding: 0px 10px;
     user-select: none;
 }
 
@@ -48,10 +72,32 @@ nav h4 {
     padding-left: 10px;
 }
 
-#about {
+#who-i-am {
+    background: radial-gradient(ellipse 150px 250px, #5c302e, black);
     margin: 0px 40px;
     display: flex;
-    height: 100%;
+    height: calc(100dvh - 59px);
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+#who-i-am img {
+    height: 160px;
+    width: 160px;
+    user-select: none;
+}
+
+#who-i-am h2 {
+    padding: 15px 0px;
+}
+
+#about {
+    background: radial-gradient(ellipse 150px 250px, #2a2d50, black);
+    margin: 0px 40px;
+    display: flex;
+    height: calc(100dvh - 59px);
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -59,46 +105,29 @@ nav h4 {
 }
 
 #about img {
-    mask-image: linear-gradient(0deg, transparent 0%, black 30%);
+    height: 150px;
+    width: 160px;
+    object-fit: cover;
     user-select: none;
 }
 
-hr {
-    width: 160px;
-    height: 2px;
-    border: none;
-    border-radius: 100%;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    background: linear-gradient(90deg, #ADB4FF, #8791FF);
-}
-
 #about h2 {
-    padding-bottom: 15px;
+    padding: 15px 0px;
     background: linear-gradient(90deg, #ADB4FF, #8791FF);
     background-clip: text;
-    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 #about p {
-    max-width: 600px;
+    max-width: 400px;
 }
 
 footer {
-    background-color: rgba(0, 0, 0, 0.8);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    position:sticky;
+    bottom: 15px;
     margin: 15px auto;
-    height: 44px;
-    min-height: 44px;
     width: 160px;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 26px;
-    border-color: #333333;
+    justify-content: center;
 }
 
 footer a {
